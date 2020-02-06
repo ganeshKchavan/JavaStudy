@@ -1,6 +1,6 @@
 package com.study.collections.sorting;
 
-class Result {
+public class Result {
     private int totalMarks;
     private String grade;
 

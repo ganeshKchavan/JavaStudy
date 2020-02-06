@@ -1,9 +1,9 @@
-package com.study.collections.sorting;
+package com.study.collections.sorting.map;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.study.collections.sorting.Result;
+import com.study.collections.sorting.Student;
+
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class MapSorting {
@@ -11,20 +11,32 @@ public class MapSorting {
     public static void main(String args[]) {
         HashMap<Student, Result> studentResults = populateStudentResults();
         studentResults.forEach((k, v) -> System.out.println(k + " " + v));
-        compareWithLambadaExpression(studentResults);
-        compareWithMethodReference(studentResults);
+        sortWithComparator(studentResults);
+        sortWithLambadaExpression(studentResults);
+        sortWithMethodReference(studentResults);
     }
 
-    private static void compareWithLambadaExpression(Map<Student, Result> studentResults) {
+    /* Sorts the map using comparator. First it converts it to List<Map.Entry<S, R>>, then uses
+    the Comparator created for comparing Map.Entry objects.
+     */
+    private static void sortWithComparator(Map<Student, Result> studentResults) {
+        System.out.println("== Sort using Comparator ==");
+        List<Map.Entry<Student, Result>> entryList = new ArrayList(studentResults.entrySet());
+        Collections.sort(entryList, new StudentNameAndIdComparator());
+        entryList.forEach(System.out::println);
+    }
+
+    private static void sortWithLambadaExpression(Map<Student, Result> studentResults) {
         System.out.println("== Sort using Lambada expressions ==");
-        List<Map.Entry<Student, Result>> entries = studentResults.entrySet().stream()
+        List<Map.Entry<Student, Result>> entries =
+            studentResults.entrySet().stream()
                 .sorted((a, b) -> b.getValue().getTotalMarks() - (a.getValue().getTotalMarks()) )
                 .limit(4)
                 .collect(Collectors.toList());
         entries.forEach(System.out::println);
     }
 
-    private static void compareWithMethodReference(Map<Student, Result> studentResults) {
+    private static void sortWithMethodReference(Map<Student, Result> studentResults) {
         System.out.println("== Sort using Method reference ==");
         List<Map.Entry<Student, Result>> entries = studentResults.entrySet().stream()
                 .sorted(Comparator.comparing(Map.Entry::getValue, Result::compareByGradeAndTotalMarks))
@@ -49,12 +61,16 @@ public class MapSorting {
         Student s5 = new Student(4, "Monika");
         Result r5 = new Result(83, "E");
 
+        Student s6 = new Student(6, "Ganesh");
+        Result r6 = new Result(93, "O");
+
         HashMap<Student, Result> studentResults = new HashMap<>();
         studentResults.put(s1, r1);
         studentResults.put(s2, r2);
         studentResults.put(s3, r3);
         studentResults.put(s4, r4);
         studentResults.put(s5, r5);
+        studentResults.put(s6, r6);
 
         return studentResults;
     }

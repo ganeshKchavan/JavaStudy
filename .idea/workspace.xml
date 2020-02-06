@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63db56bc-53c2-4e75-975f-ba69a742be06" name="Default Changelist" comment="" />
+    <list default="true" id="63db56bc-53c2-4e75-975f-ba69a742be06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collections/sorting/map/StudentNameAndIdComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/collections/sorting/MapSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/collections/sorting/map/MapSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/collections/sorting/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/collections/sorting/Result.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XKxvjvwVRZvTfrbXkzpeQDlKXS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,19 +32,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.study.collections.sorting.maps" />
       <recent name="com.study.collections.sorting" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="MapSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.collections.sorting.MapSorting" />
+      <option name="MAIN_CLASS_NAME" value="com.study.collections.sorting.map.MapSorting" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.collections.sorting.*" />
+          <option name="PATTERN" value="com.study.collections.sorting.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,30 +90,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580885508725" />
-    <state x="413" y="146" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1580885779511">
+    <state x="413" y="146" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1580990754497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="146" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580885779511" />
-    <state x="479" y="250" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580885819478">
+    <state x="413" y="146" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580990754497" />
+    <state x="479" y="250" width="436" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580990763012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="250" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1580885819478" />
-    <state width="1323" height="272" key="GridCell.Tab.0.bottom" timestamp="1580893697324">
+    <state x="479" y="250" width="436" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1580990763012" />
+    <state width="1323" height="272" key="GridCell.Tab.0.bottom" timestamp="1580992724855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="272" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580893697324" />
-    <state width="1323" height="272" key="GridCell.Tab.0.center" timestamp="1580893697324">
+    <state width="1323" height="272" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580992724855" />
+    <state width="1323" height="272" key="GridCell.Tab.0.center" timestamp="1580992724855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="272" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580893697324" />
-    <state width="1323" height="272" key="GridCell.Tab.0.left" timestamp="1580893697324">
+    <state width="1323" height="272" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580992724855" />
+    <state width="1323" height="272" key="GridCell.Tab.0.left" timestamp="1580992724855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="272" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580893697324" />
-    <state width="1323" height="272" key="GridCell.Tab.0.right" timestamp="1580893697324">
+    <state width="1323" height="272" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580992724855" />
+    <state width="1323" height="272" key="GridCell.Tab.0.right" timestamp="1580992724855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="272" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580893697324" />
+    <state width="1323" height="272" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580992724855" />
     <state x="314" y="61" width="737" height="606" key="find.popup" timestamp="1580885374479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
